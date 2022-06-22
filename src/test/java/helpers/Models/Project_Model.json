@@ -1,0 +1,12 @@
+{
+    "id": "#number",
+    "order": "##number",
+    "color": "#number",
+    "name": "#string",
+    "comment_count": "#number",
+    "shared": "#boolean",
+    "favorite": "#boolean",
+    "sync_id": "#number",
+    "inbox_project": "##boolean",
+    "url": "#string"
+}

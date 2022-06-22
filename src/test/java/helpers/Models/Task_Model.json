@@ -1,0 +1,19 @@
+{
+    "id": "#number",
+    "assigner": "#number",
+    "project_id": "#number",
+    "section_id": "#number",
+    "parent": "##number",
+    "parent_id": "##number",
+    "order": "#number",
+    "content": "#string",
+    "description": "#string",
+    "completed": "#boolean",
+    "label_ids": "#array",
+    "priority": "#number",
+    "comment_count": "#number",
+    "creator": "#number",
+    "created": "#? isValidTime(_)",
+    "due": "##object",
+    "url": "#string"
+}

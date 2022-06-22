@@ -1,0 +1,6 @@
+{
+    "date": "#string",
+    "string": "#string",
+    "lang": "#string",
+    "recurring": "#boolean"
+}
