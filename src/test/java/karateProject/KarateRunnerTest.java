@@ -12,7 +12,7 @@ import net.masterthought.cucumber.Configuration;
 import net.masterthought.cucumber.ReportBuilder;
 import org.apache.commons.io.FileUtils;
 
-class DemoTest {
+class KarateRunnerTest {
 
     @Test
     void testParallel() {

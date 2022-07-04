@@ -16,7 +16,7 @@ Those examples are developed to use todoist API. So if you want to execute it, y
 You must include in karate-config.json those parameters:
 
   config.apiUrl= 'https://api.todoist.com/rest/v1/';
-  config.auth = '[your Bearer token]';
+  config.auth = 'Bearer [your Bearer token]';
   
 and add this auth param to headers requests using the following sentence just before return config object:
   
@@ -24,7 +24,7 @@ and add this auth param to headers requests using the following sentence just be
   
 If you has done everything well, you will be able to start using the project. 
 
-The project uses JUnit5 and it is configured to exetcute the tests using the _maven test_ command.
+The project uses JUnit5 and it is configured to exetcute the tests using the _maven test_ command: '$mvn test'
 You will be able to execute it going to project directory (use promp cmd) and executing there the maven command.
 
 ## Project Structure
@@ -35,9 +35,9 @@ Contains the features and main execution java class.
 Contains the classes features that implement the scenarios for each test case. The most recommendable is store all features files inside of this folder.
 
 #### Runner file:
-Those files are needed to execute the tests. In this case, we have only one for execute all tests (_DemoTest.java_). This file configures the execution of all stored scenarios at the same or lower level. That means, if you have a feature file in a higher level than _DemoTest.java_, those scenarios won't be executed using this runner file.
+Those files are needed to execute the tests. In this case, we have only one for execute all tests (_KarateRunnerTest.java_). This file configures the execution of all stored scenarios at the same or lower level. That means, if you have a feature file in a higher level than _DemoTest.java_, those scenarios won't be executed using this runner file.
 
-_DemoTest_ file contains the configuration needed to use a parallel execution with 5 thread at the same time. Also, contains a method to get reports using  cucumber reporting.
+_KarateRunnerTest_ file contains the configuration needed to use a parallel execution with 5 thread at the same time. Also, contains a method to get reports using  cucumber reporting.
 
 Reports will be stored on target>generated-tests-sources folder after each execution.
 

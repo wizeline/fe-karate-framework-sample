@@ -12,11 +12,11 @@ function fn() {
 
   //Config to use Demo examples
   config.apiUrl= 'https://api.todoist.com/rest/v1/';
-  config.auth = '[yourBearerToken]';
+  config.auth = 'Bearer [yourBearerToken]';
   //Connection string database
   config.dbConfig = { username: 'root', password: '', url: 'jdbc:mysql://localhost:3306/[yourDbName]', driverClassName: 'com.mysql.cj.jdbc.Driver' }
   //Adding auth - use it only when it will be needed e.g to execute Demo examples 
   karate.configure('headers', {Authorization: config.auth})
-  
+  config.utils = karate.call('classpath:helpers/JsFiles/karate-utils.js');
   return config;
 }

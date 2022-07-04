@@ -1,0 +1,12 @@
+#Not working. This file is to show the desired structure
+operationId: getOngoingCaps
+statusCode: 401
+params: null
+body: null
+auth: 
+  username: fakeuser
+  password: fakepassword
+matchResponse: true
+responseMatches:
+  message: '#string'
+responseMatchesEach: {}
