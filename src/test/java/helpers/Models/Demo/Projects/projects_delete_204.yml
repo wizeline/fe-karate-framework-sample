@@ -1,0 +1,11 @@
+#projects_delete_204
+operationId: deleteProject
+verb: delete
+path: 'projects'
+statusCode: 204
+value: '#(result.response.id)'
+params: null
+body: null
+matchResponse: false
+responseMatches: 
+baseStructure:

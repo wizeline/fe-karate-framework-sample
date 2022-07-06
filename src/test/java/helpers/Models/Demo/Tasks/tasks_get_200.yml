@@ -1,0 +1,34 @@
+#tasks_get_200
+operationId: getTasks
+verb: get
+path: 'tasks'
+statusCode: 200
+value: null
+params: null
+body: null
+matchResponse: true
+responseMatches: '#[] baseStructure'
+baseStructure:
+  id: '#number'
+  assigner: '#number'
+  project_id: '#number'
+  section_id: '#number'
+  parent: '##number'
+  parent_id: '##number'
+  order: '#number'
+  content: '#string'
+  description: '#string'
+  completed: '#boolean'
+  label_ids: '#array'
+  priority: '#number'
+  comment_count: '#number'
+  creator: '#number'
+  created: '#string? utils.dateValidator(_)'
+  due: '##object? karate.match(_,dueStructure).pass'
+  url: '#string'
+
+dueStructure:
+  date: '#string'
+  string: '#string'
+  lang: '#string'
+  recurring: '#boolean'

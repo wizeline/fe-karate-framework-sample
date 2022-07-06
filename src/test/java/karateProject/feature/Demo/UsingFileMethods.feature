@@ -37,4 +37,5 @@ Feature: Demo using java methods tests
         Then status 200
         * def date = response[0].created
         And match isValidTime(date) == true
+        And match utils.dateValidator(date) == true
         

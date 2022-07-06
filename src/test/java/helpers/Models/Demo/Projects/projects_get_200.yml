@@ -1,0 +1,21 @@
+#projects_get_200
+operationId: getProjects
+verb: get
+path: 'projects'
+statusCode: 200
+value: null
+params: null
+body: null
+matchResponse: true
+responseMatches: '#[] baseStructure'
+baseStructure:
+  id: '#number'
+  order: '##number'
+  color: '#number'
+  name: '#string'
+  comment_count: '#number'
+  shared: '#boolean'
+  favorite: '#boolean'
+  sync_id: '#number'
+  inbox_project: '##boolean'
+  url: '#string'
