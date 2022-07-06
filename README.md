@@ -72,7 +72,7 @@ Contains js files to provide utils using javascript lenguage
     * value: Any value to complete the path e.g: In delete requests, the id of the element that you want to delete. 
     * params: Set of params needed to execute the request.
     * body: the body of the request
-    * isResponse: true/false. Depend of you want to check any model agains the response.
+    * matchResponse: true/false. Depend of you want to check any model agains the response.
     * baseStructure: the main strucutre of the response.
     * responseMatches: configures if you want to check a set of baseStrucutres.  
 
