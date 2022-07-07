@@ -24,7 +24,7 @@ baseStructure:
   comment_count: '#number'
   creator: '#number'
   created: '#string? utils.dateValidator(_)'
-  due: '##object? karate.match(_,dueStructure).pass'
+  due: '##(dueStructure)'
   url: '#string'
 
 dueStructure:
