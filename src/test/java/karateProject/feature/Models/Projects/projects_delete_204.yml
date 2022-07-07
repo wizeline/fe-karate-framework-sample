@@ -3,7 +3,8 @@ operationId: deleteProject
 verb: delete
 path: 'projects'
 statusCode: 204
-value: '#(result.response.id)'
+value: 
+  v1: '#(result.response.id)'
 params: null
 body: null
 matchResponse: false
