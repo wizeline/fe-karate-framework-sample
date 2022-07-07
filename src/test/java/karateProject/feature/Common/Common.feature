@@ -6,8 +6,8 @@ Background:
     * def req = __arg
 
 Scenario: projects
-    * def value = req.value
-    Given path req.path, value
+    * def value = utils.buildPath(req.path,req.value)
+    Given path value
     And request req.body
     * params req.params
     * def verb = req.verb

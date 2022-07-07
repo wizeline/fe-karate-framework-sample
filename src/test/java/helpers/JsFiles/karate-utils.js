@@ -11,7 +11,14 @@ function fn() {
               karate.log('*** invalid date string:', s);
               return false;
             }
-          } 
+          }
+    utils.buildPath = (a,b) => {
+            var path= a;
+            Object.values(b).forEach(x => {
+              path=path+"/"+x;
+            });
+            return path;
+          }
 
     return utils;
 }
