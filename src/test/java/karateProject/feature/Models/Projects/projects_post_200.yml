@@ -1,0 +1,22 @@
+#projects_post_200
+operationId: postProjects
+verb: post
+path: 'projects'
+statusCode: 200
+value: null
+params: null
+body: 
+  name: '#(randomString)'
+matchResponse: true
+responseMatches: 
+baseStructure:
+  id: '#number'
+  order: '##number'
+  color: '#number'
+  name: '#(randomString)'
+  comment_count: '#number'
+  shared: '#boolean'
+  favorite: '#boolean'
+  sync_id: '#number'
+  inbox_project: '##boolean'
+  url: '#string'

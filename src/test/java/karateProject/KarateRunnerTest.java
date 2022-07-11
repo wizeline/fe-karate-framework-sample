@@ -12,12 +12,12 @@ import net.masterthought.cucumber.Configuration;
 import net.masterthought.cucumber.ReportBuilder;
 import org.apache.commons.io.FileUtils;
 
-class DemoTest {
+class KarateRunnerTest {
 
     @Test
     void testParallel() {
         
-        Results results = Runner.path("classpath:testdoitApp/feature").outputCucumberJson(true).parallel(5);
+        Results results = Runner.path("classpath:karateProject/feature").outputCucumberJson(true).parallel(5);
         generateReport(results.getReportDir());
         assertEquals(0, results.getFailCount(), results.getErrorMessages());
     }

@@ -29,7 +29,7 @@ Scenario: Check Get all projects reding from file
     Given path 'projects'
     When method Get
     Then status 200
-    And match each response == read('classpath:helpers/Models/Project_Model.json')
+    And match each response == read('classpath:karateProject/feature/Models/Project_Model.json')
     
 Scenario: Get all active tasks
     Given path 'tasks'
@@ -102,5 +102,5 @@ Scenario: Get all active tasks v2
     """
     When method Get
     Then status 200
-    And match each response == mainObject∫
+    And match each response == mainObject
     
