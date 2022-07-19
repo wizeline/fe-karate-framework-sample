@@ -1,4 +1,4 @@
-# karateFrameworkProject
+# fe-karate-framework-sample project
 This is a basic karate project with samples and some added functionalities.
 
 ## Prerequisites
