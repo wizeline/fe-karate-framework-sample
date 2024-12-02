@@ -14,7 +14,7 @@
         <maven.surefire.version>2.22.2</maven.surefire.version>        
         <karate.version>1.2.0</karate.version>
         <cucumber.reporting.version>5.7.1</cucumber.reporting.version>
-        <spring.jdbc.version>5.3.20</spring.jdbc.version>
+        <spring.jdbc.version>6.1.14</spring.jdbc.version>
         <mysql.connector.java.version>8.0.29</mysql.connector.java.version>
     </properties>    
 
